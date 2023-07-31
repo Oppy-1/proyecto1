@@ -1,0 +1,100 @@
+/* CONTEINERS */
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: RGB(170 233 99);
+}
+.container-general{
+    margin-left: 17%;
+}
+main{ margin-left: 30px;}
+/* SECCION  */
+.logros{
+   display: flex;
+   justify-content: space-evenly;
+    justify-items: center;
+}   
+.logros div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* ASIDE */
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(157,204,234);
+    padding: 0 10px 0 16px;
+    margin-right: 10px;
+    position: fixed;
+    height: 100%;
+}
+.label{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}  
+
+/* FOOTER */
+ footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    background-color: RGB(238 114 9);
+    padding-top: 20px;
+    }
+ /* IMG */
+ header{ 
+    background-image: url("../img/canchafutbol.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding: 150px;
+    }
+.carrusel{
+     height: 500px;
+     width: 500px; 
+}
+/* NAVBAR */
+.container-fluid a:hover{
+    background-color:RGB(196 196 198);
+}
+/* mediaquerie*/
+@media (max-width: 800px) {
+    header{ background-position:top }
+
+}         
+@media (max-width: 800px) {
+    .container-general{
+        flex-direction: column;
+    }
+    .logros{flex-direction: column;}
+}
+@media (max-width: 1100px){
+    aside {
+    display: none;
+}
+.container-general{
+    margin: 0%;
+    padding: 0%;
+}
+}
+@media (max-width: 800px) {
+    .carrusel { max-width: 100%;
+        height: auto;}
+}
+@media (max-width: 700px) {
+    header{display: none;}
+
+}  
+
+/* Efectos generales*/
+*{
+    box-sizing: border-box;
+}

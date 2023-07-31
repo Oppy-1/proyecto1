@@ -1,0 +1,86 @@
+
+/* CONTAINERS*/
+body{
+display: flex;
+flex-direction: column;
+font-family: 'Times New Roman', Times, serif;
+background-color:aliceblue;
+margin: 0;
+padding-right: 0;
+margin-right: 0;
+padding: 0;
+}
+.container-general{
+display: flex;
+flex-direction: column;
+margin-left: 14%;
+flex-basis: 80%;
+padding-right: 0;
+margin-right: 0;
+}
+main{ 
+    margin-left: 30px;
+}
+/* ASIDE */
+aside{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+background-color:rgb(157,204,234);
+padding: 0 10px 0 15px;
+position: fixed;
+height: 100%;
+}
+.label{
+margin-top: 5px;
+margin-bottom: 10px;
+}
+/* FOOTER */
+footer{
+display: flex;
+flex-direction: column;
+text-align: center;
+padding-top: 20px;
+gap: 10px;
+background-color: RGB(238 114 9)
+}
+/* IMG */
+.imgbody{
+    float: left;
+    max-width: 100%;
+    height: auto;
+    }
+    .fab{ margin-bottom: 50px;}
+    h2 {margin: 0 0 20px 10px;}
+    header{ 
+    background-image: url("../img/Sin\ título.png");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    padding: 60px;
+    }
+    /* NAVBAR */
+.container-fluid a:hover{
+    background-color:RGB(196 196 198);
+}
+.titulo{
+display: flex;
+padding: 20px;
+}
+    /* mediaquerie*/
+
+
+@media (max-width: 800px) {
+    .container-general{
+        flex-direction: column;
+    }
+    header{ padding: 0;}
+}
+@media (max-width: 1100px){
+    aside{display: none;}
+    .container-general{
+        margin-left: 0%;
+    }
+    .imgbody{ float:initial} 
+
+}
